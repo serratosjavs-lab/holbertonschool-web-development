@@ -1,17 +1,21 @@
 # HTML, advanced
 
-## 📄 Description
-This project focuses on building a *complete HTML page* from a Figma wireframe using *semantic elements*.  
-It serves as the foundation for understanding the *structure* of a webpage before adding CSS or JavaScript.
+## Description
+Build a complete static webpage from a wireframe using *semantic HTML* only (no frameworks). Focus on structure, accessibility, and W3C-valid markup.
 
-## 📁 Repository Information
-*GitHub repository:* holbertonschool-web-development  
-*Directory:* html_advanced  
-*File:* README.md
+## Learning Objectives
+- What is HTML and the DOM
+- Markup language basics: elements, tags, attributes
+- Create a page from a wireframe
+- Semantic sectioning elements
+- Validate HTML with W3C
 
----
+## Requirements
+- Files end with a new line
+- Only HTML/CSS/JavaScript (no external libraries)
+- Must pass W3C validation
 
-## 👩🏻‍💻 Author
-*Serratos Javs*  
-📧 [serratos.javs@gmail.com](mailto:serratos.javs@gmail.com)  
-Holberton School – Web Development Track
+## Repo Info
+GitHub repository: holbertonschool-web-development  
+Directory: html_advanced  
+File: README.md
