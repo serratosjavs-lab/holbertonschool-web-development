@@ -11,18 +11,17 @@
 
   <!-- ===== Header (Task 1) ===== -->
   <header>
-    <!-- Logo link -->
-    <a href="/" aria-label="SmileSchool home">
+  <div class="container">
+    <a href="/" class="logo" aria-label="SmileSchool home">
       <img src="logo.png" alt="SmileSchool logo">
     </a>
-
-    <!-- Primary nav -->
     <nav aria-label="Primary">
       <a href="#">Courses</a>
       <a href="#">Pricing</a>
       <a href="#">Login</a>
     </nav>
-  </header>
+  </div>
+</header>
   <!-- ===== /Header ===== -->
 
   <!-- ===== Main content ===== -->
@@ -33,8 +32,8 @@
       <!-- Top block: title + text + button -->
       <div>
         <h1 id="hero-title">Get schooled</h1>
-        <p>SMILES - GRIN - LAUGH</p>
-        <button type="button">REGISTER FOR FREE</button>
+        <p class="meta">SMILES &middot; GRIN &middot; LAUGH</p>
+        <button type="button" class="cta">REGISTER FOR FREE</button>
       </div>
 
       <!-- Bottom block: Learn from the pros + 4 profile cards -->
@@ -71,19 +70,20 @@
     <!-- ===== /Hero ===== -->
 
     <!-- ===== Quote (Task 3) ===== -->
-    <section id="quote" aria-labelledby="quote-title">
-      <div>
-        <img src="quote-author.jpg" alt="Smiling person giving a testimonial">
-        <div>
-          <blockquote id="quote-title">
-            Those tutorials are concise and go straight to the point. I can't think of a better
-            place to learn smiling. And it's so fun!
-          </blockquote>
-          <p>Person Name</p>
-          <p>weather presenter</p>
-        </div>
-      </div>
-    </section>
+    <section>
+  <div class="container">
+    <div class="avatar">
+      <img src="quote-author.jpg" alt="Smiling person giving a testimonial">
+    </div>
+    <div>
+      <blockquote>
+        Those tutorials are concise and go straight to the point...
+      </blockquote>
+      <p class="author">Person Name</p>
+      <p class="role">weather presenter</p>
+    </div>
+  </div>
+</section>
     <!-- ===== /Quote ===== -->
 
     <!-- ===== Videos (Task 4) ===== -->
