@@ -91,105 +91,128 @@
     <!-- ===== /Quote ===== -->
 
     <!-- ===== Videos (Task 4) ===== -->
-    <section aria-labelledby="videos-title">
-      <h1 id="videos-title">Most popular tutorials</h1>
+    <!-- ===== Videos (Task 4) ===== -->
+<section class="videos" aria-labelledby="videos-title">
+  <h1 id="videos-title" class="section-title">Most popular tutorials</h1>
 
-      <div>
-        <!-- Video 1 -->
-        <article>
-          <img src="vid-1.jpg" alt="Thumbnail: Diagonal Smile">
-          <h2>Diagonal Smile</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-
-          <!-- Author -->
-          <div>
-            <img src="pro-1.jpg" alt="Author: Phillip Massey">
-            <h3>Phillip Massey</h3>
-          </div>
-
-          <!-- Rating -->
-          <div>
-            <div>
-              <img src="star.svg" alt="star">
-              <img src="star.svg" alt="star">
-              <img src="star.svg" alt="star">
-              <img src="star.svg" alt="star">
-              <img src="star-empty.svg" alt="empty star">
-            </div>
-            <p>8 min</p>
-          </div>
-        </article>
-
-        <!-- Video 2 -->
-        <article>
-          <img src="vid-2.jpg" alt="Thumbnail: Sad Smile">
-          <h2>Sad Smile</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-
-          <div>
-            <img src="pro-2.jpg" alt="Author: Nannie Lawrence">
-            <h3>Nannie Lawrence</h3>
-          </div>
-
-          <div>
-            <div>
-              <img src="star.svg" alt="star">
-              <img src="star.svg" alt="star">
-              <img src="star.svg" alt="star">
-              <img src="star.svg" alt="star">
-              <img src="star-empty.svg" alt="empty star">
-            </div>
-            <p>8 min</p>
-          </div>
-        </article>
-
-        <!-- Video 3 -->
-        <article>
-          <img src="vid-3.jpg" alt="Thumbnail: Natural Smile">
-          <h2>Natural Smile</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-
-          <div>
-            <img src="pro-3.jpg" alt="Author: Bruce Walters">
-            <h3>Bruce Walters</h3>
-          </div>
-
-          <div>
-            <div>
-              <img src="star.svg" alt="star">
-              <img src="star.svg" alt="star">
-              <img src="star.svg" alt="star">
-              <img src="star.svg" alt="star">
-              <img src="star-empty.svg" alt="empty star">
-            </div>
-            <p>8 min</p>
-          </div>
-        </article>
-
-        <!-- Video 4 -->
-        <article>
-          <img src="vid-4.jpg" alt="Thumbnail: Happy Smile">
-          <h2>Happy Smile</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-
-          <div>
-            <img src="pro-4.jpg" alt="Author: Henry Hughes">
-            <h3>Henry Hughes</h3>
-          </div>
-
-          <div>
-            <div>
-              <img src="star.svg" alt="star">
-              <img src="star.svg" alt="star">
-              <img src="star.svg" alt="star">
-              <img src="star.svg" alt="star">
-              <img src="star-empty.svg" alt="empty star">
-            </div>
-            <p>8 min</p>
-          </div>
-        </article>
+  <div class="grid">
+    <!-- Video 1 -->
+    <article class="card">
+      <div class="media">
+        <img src="vid-1.jpg" alt="Thumbnail: Diagonal Smile">
+        <span class="play" aria-hidden="true"></span>
       </div>
-    </section>
+      <div class="body">
+        <h2 class="title">Diagonal Smile</h2>
+        <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+      <div class="footer">
+        <div class="author">
+          <img src="pro-1.jpg" alt="Author: Phillip Massey">
+          <span>Phillip Massey</span>
+        </div>
+        <div class="meta">
+          <span class="stars">
+            <img src="star.svg" alt="star">
+            <img src="star.svg" alt="star">
+            <img src="star.svg" alt="star">
+            <img src="star.svg" alt="star">
+            <img src="star-empty.svg" alt="empty star">
+          </span>
+          <span class="time">8 min</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Video 2 -->
+    <article class="card">
+      <div class="media">
+        <img src="vid-2.jpg" alt="Thumbnail: Sad Smile">
+        <span class="play" aria-hidden="true"></span>
+      </div>
+      <div class="body">
+        <h2 class="title">Sad Smile</h2>
+        <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+      <div class="footer">
+        <div class="author">
+          <img src="pro-2.jpg" alt="Author: Nannie Lawrence">
+          <span>Nannie Lawrence</span>
+        </div>
+        <div class="meta">
+          <span class="stars">
+            <img src="star.svg" alt="star">
+            <img src="star.svg" alt="star">
+            <img src="star.svg" alt="star">
+            <img src="star.svg" alt="star">
+            <img src="star-empty.svg" alt="empty star">
+          </span>
+          <span class="time">8 min</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Video 3 -->
+    <article class="card">
+      <div class="media">
+        <img src="vid-3.jpg" alt="Thumbnail: Natural Smile">
+        <span class="play" aria-hidden="true"></span>
+      </div>
+      <div class="body">
+        <h2 class="title">Natural Smile</h2>
+        <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+      <div class="footer">
+        <div class="author">
+          <img src="pro-3.jpg" alt="Author: Bruce Walters">
+          <span>Bruce Walters</span>
+        </div>
+        <div class="meta">
+          <span class="stars">
+            <img src="star.svg" alt="star">
+            <img src="star.svg" alt="star">
+            <img src="star.svg" alt="star">
+            <img src="star.svg" alt="star">
+            <img src="star-empty.svg" alt="empty star">
+          </span>
+          <span class="time">8 min</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Video 4 -->
+    <article class="card">
+      <div class="media">
+        <img src="vid-4.jpg" alt="Thumbnail: Happy Smile">
+        <span class="play" aria-hidden="true"></span>
+      </div>
+      <div class="body">
+        <h2 class="title">Happy Smile</h2>
+        <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+      <div class="footer">
+        <div class="author">
+          <img src="pro-4.jpg" alt="Author: Henry Hughes">
+          <span>Henry Hughes</span>
+        </div>
+        <div class="meta">
+          <span class="stars">
+            <img src="star.svg" alt="star">
+            <img src="star.svg" alt="star">
+            <img src="star.svg" alt="star">
+            <img src="star.svg" alt="star">
+            <img src="star-empty.svg" alt="empty star">
+          </span>
+          <span class="time">8 min</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<!-- ===== /Videos ===== -->
+
+
+            
     <!-- ===== /Videos ===== -->
 
     <!-- ===== Membership (Task 5) ===== -->
