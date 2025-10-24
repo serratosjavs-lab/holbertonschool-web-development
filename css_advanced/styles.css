@@ -267,3 +267,84 @@ main > section:nth-of-type(2)::after{ margin-bottom:-6px; }
 @media (max-width:560px){
   .videos .grid{ grid-template-columns:1fr; }
 }
+/* === Task 5 · Membership === */
+/* 4ª sección dentro de <main>: Free membership */
+main > section:nth-of-type(4){
+  background: var(--bg-dark);
+  color: var(--text);
+  text-align: center;
+  padding: 72px 0;
+}
+
+main > section:nth-of-type(4) > h1{
+  margin: 0 0 28px;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: .01em;
+}
+
+main > section:nth-of-type(4) > div{
+  /* grid de 4 columnas para los 4 benefits */
+  width: min(100%, calc(var(--maxw) + 48px));
+  margin-inline: auto;
+  padding-inline: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+main > section:nth-of-type(4) article{
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 8px 6px;
+}
+
+main > section:nth-of-type(4) article img{
+  width: 56px;
+  height: 56px;
+  margin-bottom: 14px;
+}
+
+main > section:nth-of-type(4) article h2{
+  margin: 0 0 8px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+main > section:nth-of-type(4) article p{
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--muted);
+  max-width: 240px;
+}
+
+/* Botón inferior (usa el mismo look que la CTA del hero) */
+main > section:nth-of-type(4) button{
+  display: inline-block;
+  padding: 14px 28px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(180deg, var(--primary) 0%, var(--primary-strong) 100%);
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(162,70,255,.35);
+  border: 0;
+  cursor: pointer;
+}
+
+/* responsive */
+@media (max-width: 1100px){
+  main > section:nth-of-type(4) > div{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px){
+  main > section:nth-of-type(4) > div{
+    grid-template-columns: 1fr;
+  }
+}
