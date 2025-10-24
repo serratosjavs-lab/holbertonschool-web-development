@@ -409,3 +409,66 @@ main > section:nth-of-type(5) article p{
     max-width:none;
   }
 }
+/* === Task 7 · Footer === */
+footer{
+  background: var(--bg-dark);
+  color: var(--text);
+}
+footer > div{
+  width: min(100%, calc(var(--maxw) + 48px));
+  margin-inline: auto;
+  padding: 36px 24px;
+}
+footer > div > div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+footer a{ text-decoration: none; color: inherit; }
+
+/* Logo */
+footer img[alt~="logo"]{
+  display:block;
+  max-height: 32px;
+}
+
+/* Social icons group (usa el aria-label del HTML que ya tienes) */
+footer [aria-label="Social links"]{
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+footer [aria-label="Social links"] a{
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  opacity: .9;
+  transition: transform .15s ease, opacity .15s ease;
+}
+footer [aria-label="Social links"] a:hover{
+  opacity: 1;
+  transform: translateY(-1px);
+}
+footer [aria-label="Social links"] img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display:block;
+}
+
+/* Copyright */
+footer p{
+  margin: 22px 0 0;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255,255,255,.6);
+}
+
+/* Responsive: apila logo/social arriba y centra */
+@media (max-width: 720px){
+  footer > div > div{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
